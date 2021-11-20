@@ -1,0 +1,57 @@
+@font-face {
+  font-family: myFont;
+  src: url(../media/BebasNeue-Regular.ttf);
+}
+
+body {
+  background: url(../media/bluredGameplayScreenshot.png);
+  background-size: cover;
+  font-family: myFont;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.302);
+  display: block;
+  margin: 5em 15em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu {
+  background-color: rgba(255, 0, 0, 0.411);
+}
+
+.mainButtonsBottomDiv {
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0em 1em;
+}
+
+.navbar {
+  background-color: yellow;
+  display: inline-block;
+  padding: 0em 21em;
+}
+
+.navbarMain {
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0em 0.2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigateNavbarKey {
+  background-color: red;
+  padding: 0em 0.6em;
+}
+/*# sourceMappingURL=index.css.map */

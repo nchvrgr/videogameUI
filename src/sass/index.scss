@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: myFont;
+    src: url(../media/BebasNeue-Regular.ttf);
+}
+
+body{
+    background: url(../media/bluredGameplayScreenshot.png);
+    background-size: cover;
+    font-family: myFont;    
+}
+
+
+
+@import "components/imports";
+
+
+
+
+
