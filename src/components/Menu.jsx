@@ -3,13 +3,16 @@ import NavBarMain from './NavBarMain'
 import Quests from './Quests';
 import Skills from './Skills';
 
-function Menu() {
+function Menu({selectedOption, setSelectedOption, buttonQ, setButtonQ, buttonE, setButtonE}) {
 
-    const [selectedOption, setSelectedOption] = useState("quests");
+    
 
     return (
         <div className="menu">
-            <NavBarMain option={selectedOption} setOption={setSelectedOption}/>
+            <NavBarMain option={selectedOption} setOption={setSelectedOption} 
+            buttonQ={buttonQ} setButtonQ={setButtonQ}
+            buttonE={buttonE} setButtonE={setButtonE}
+            />
             {
                 selectedOption === "quests" ?
                 <Quests/>

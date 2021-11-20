@@ -4,7 +4,6 @@ import quests from '../customableStuff/quests'
 function QuestLog({selected}) {
     const quest = quests.filter(quest => quest.id === selected)[0];
     const completed = quest.objectives.every(objective => objective.completed);
-    console.log("Completed:", completed);
     return (
         <div className="logDiv">  
             <p className="questLogLabel">
@@ -17,7 +16,7 @@ function QuestLog({selected}) {
                 <p className="objectiveTracker">Objective tracker</p>
                 {
                     quest?.objectives.map(objective => (
-                        <div>
+                        <div key={objective.objId}>
                             <p className="questTitle">
                                 <input type="checkbox" checked={objective.completed} disabled />
                                 {objective.name}
@@ -26,7 +25,8 @@ function QuestLog({selected}) {
                         </div>
                     ))
                 }
-                <footer className="questStats">
+            </div>
+            <footer className="questStats">
                     <div>
                         <h1>{completed ? "Completed Quest" : "Incomplete Quest" }</h1>
                     </div>
@@ -47,10 +47,6 @@ function QuestLog({selected}) {
                         </p>
                     </div>
                 </footer>
-
-
-            
-            </div>
         </div>
     )
 }

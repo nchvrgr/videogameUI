@@ -2,8 +2,7 @@ import React from 'react';
 
 function NavBar({option, setOption}) {
     return (
-        <div className="navbar">
-            <nav>
+        <nav className="navbar">
                 <span className="navbarOption">MAP</span>
                 <span 
                 className={option==="quests" ? "navbarOptionSelected selectableOption" : "navbarOption selectableOption"}
@@ -15,8 +14,7 @@ function NavBar({option, setOption}) {
                 className={option==="skills" ? "navbarOptionSelected selectableOption" : "navbarOption selectableOption"}
                 onClick={() => setOption("skills")}
                 >SKILLS</span>
-            </nav>
-        </div>
+        </nav>
     )
 }
 

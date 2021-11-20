@@ -1,15 +1,27 @@
 import React from 'react'
+import { useEffect } from 'react/cjs/react.development'
 import NavBar from './NavBar'
 
-function NavBarMain({option, setOption}) {
+function NavBarMain({option, setOption, buttonQ, setButtonQ, buttonE, setButtonE}) {
+
+    useEffect(() => {
+        setTimeout(() => {
+            setButtonQ(false)
+        }, 500);
+        setTimeout(() => {
+            setButtonE(false)
+        }, 500);
+    }, [buttonQ, buttonE]);
 
     return (
         <div className="navbarMain">
-            <span className="navigateNavbarKey">Q</span>
-            <span>
-                <NavBar option={option} setOption={setOption}/>
-            </span>
-            <span className="navigateNavbarKey">E</span>
+            <div className="navigationButtonDiv">
+                <span className={buttonQ ? "navigateNavbarKeyPressed" : "navigateNavbarKey" }>Q</span>
+            </div>
+            <NavBar option={option} setOption={setOption}/>
+            <div className="navigationButtonDiv">
+                <span className={buttonE ? "navigateNavbarKeyPressed" : "navigateNavbarKey"}>E</span>
+            </div>
         </div>
     )
 }
