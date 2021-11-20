@@ -432,11 +432,13 @@ const quests = [
     },
     {
         id: 23,
-        name: 'The new king',
+        name: 'The new goblin king',
         objectives: [
             {
                 objId: 1,
-                name: 'Become the new king of the goblin city'
+                name: 'Become the new king of the goblin city',
+                description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, sunt in culpa qui officia deserunt mollit anim id est laborum',
+                completed: false
             }
         ],
         rewards: 100000,

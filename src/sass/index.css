@@ -111,7 +111,7 @@ body {
 }
 
 .questNav {
-  height: 20em;
+  height: 21em;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -171,6 +171,33 @@ body {
 
 .questLog {
   background-color: #34e8c1;
+  height: 80%;
+}
+
+.logDiv {
+  height: 100%;
+  display: inline-block;
+}
+
+.littleTextStat {
+  font-size: 0.6em;
+}
+
+.whiteStat {
+  color: white;
+}
+
+.questStats {
+  margin-top: 3.88em;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 7.25em;
+  width: 41.85%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .objectiveTracker {

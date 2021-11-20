@@ -6,7 +6,7 @@ function QuestLog({selected}) {
     const completed = quest.objectives.every(objective => objective.completed);
     console.log("Completed:", completed);
     return (
-        <>  
+        <div className="logDiv">  
             <p className="questLogLabel">
                 <span className="questLogLabelText">{quest?.name}</span>
                 {
@@ -26,11 +26,32 @@ function QuestLog({selected}) {
                         </div>
                     ))
                 }
+                <footer className="questStats">
+                    <div>
+                        <h1>{completed ? "Completed Quest" : "Incomplete Quest" }</h1>
+                    </div>
+                    <div>
+                        <p>Rewards</p>
+                        <p className="littleTextStat">{completed ? "You received" : "You will receive"}</p>
+                        <p className="littleTextStat whiteStat">${quest?.rewards}</p>
+                    </div>
+                    <div>
+                        <p>Quest details</p>
+                        <p className="littleTextStat">
+                            Assigned by:
+                            <span className="littleSpanStat whiteStat"> {quest?.asignedBy}</span>
+                        </p>
+                        <p className="littleTextStat">
+                            Location:
+                            <span className="littleSpanStat whiteStat"> {quest?.location}</span>
+                        </p>
+                    </div>
+                </footer>
 
 
             
             </div>
-        </>
+        </div>
     )
 }
 
