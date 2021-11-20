@@ -1,18 +1,17 @@
+@import "mixins";
+
 .quests{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-
 .questList{
     width: 15em;
-    background-color: rgba(0, 0, 0, 0.535);
+    background-color: $backgroundDark;
     list-style: none;
-    color: rgba(255, 255, 255, 0.432);
+    color: $lightLetter;
 }
-
-
 
 .questListElement{
     cursor: pointer;
@@ -22,12 +21,13 @@
 .questNav{
     height: 21em;
     overflow: hidden;
-    overflow-y:scroll;   
+    overflow-y: scroll;   
 }
 
 .questListElementSelected{
     cursor: pointer;
-    background-color: orange;
+    background-color: $yellowColor;
+    color: black;
     margin: 0;
     margin-right: 0.3em;
 }
@@ -47,24 +47,70 @@
 
 .questTitle{
     margin-bottom: 0.5em;
+    display: flex;
 }
 
-
 .questLabel{
-    background-color: rgba(0, 0, 0, 0.549);
-    color: orange;
+    background-color: $backgroundDark;
+    margin-top: 0.5em;
+    color: $yellowColor;
     display: flex;
     justify-content: space-between;
     padding-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
+.objectiveName{
+    margin-left: 0.5em;
+    color: white;
+    font-size: 1.1em;
+}
+
+.completedStats{
+    color: $yellowColor !important;
+}
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #3b371df8;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: $yellowColor;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
 .questLogLabel{
-    background-color: rgba(12, 10, 10, 0.514);
+    background-color: $backgroundDark;
     color: white;
     display: flex;
-    border: solid black 1px;
     padding: 0em 0.5em;
     justify-content: space-between;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.questType{
+    color: $yellowColor;
 }
 
 .questLogDiv{
@@ -74,12 +120,18 @@
 .questLog{
     height: 14.94em;
     margin: 0;
+    background-color: $backgroundDark;
+}
+
+.questLogDetails{
+    color: $lightLetter;
+    padding-right: 0.2em;
+    padding-left: 1em;
 }
 
 .logDiv{
     height: 100%;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.568);
 }
 
 .littleTextStat{
@@ -91,23 +143,34 @@
 }
 
 .questStats{
-    background-color: rgba(0, 0, 0, 0.186);
-    color: rgba(255, 255, 255, 0.241);
+    background-color: $backgroundDarkest;
+    color: $darkerLetter;
     display: flex;
     justify-content: space-around;
 }
 
 .objectiveTracker{
-    color: orange;
-    padding-left: 0.5em;
+    padding-top: 1em;
+    font-size: 0.85em;
+    color: $yellowColor;
+    padding-left: 1.5em;
+    margin: 0;
 }
 
+.darkStat{
+    color: $darkerLetter;
+}
+
+#rewards{
+    font-size: 0.6em;
+    margin-top: 0;
+}
 
 
 // Scrollbar
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0.5em;
 }
   
 ::-webkit-scrollbar-track {
@@ -115,6 +178,7 @@
  }
    
 ::-webkit-scrollbar-thumb {
-    background: orange; 
+    background: $yellowColor; 
+    box-shadow: none;
 }
   

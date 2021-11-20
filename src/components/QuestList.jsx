@@ -5,9 +5,13 @@ function QuestList({quests, selected, setSelected}) {
 
     const handleKeyDown = (e) => {
         if (e.key === 'ArrowDown'|| e.key === 's') {
-            setSelected(selected + 1);
+            if (selected < quests.length) {
+                setSelected(selected + 1);
+            }
         } else if (e.key === 'ArrowUp' || e.key === 'w') {
-            setSelected(selected - 1);
+            if (selected > 1) {
+                setSelected(selected - 1);
+            }
         }
     }
 

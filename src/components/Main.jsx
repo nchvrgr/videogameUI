@@ -20,7 +20,7 @@ function Main() {
         }
         if (selectedOption === "quests") {
             if (e.key === "e" || e.key === "q") {
-                setSelectedOption("ecs");
+                setSelectedOption("skills");
                 return;
             }
         }

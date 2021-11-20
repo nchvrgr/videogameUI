@@ -1,12 +1,12 @@
+@import "mixins";
 
 .navbarMain{
-    background-color: rgba(0, 0, 0, 0.604);
     display: flex;
     width: 100%;
 }
 
 .navbar{
-    background-color: rgba(255, 255, 255, 0.131);
+    background-color: $backgroundDark;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -14,45 +14,48 @@
 }
 
 .navigateNavbarKey{
-    color: white;
+    color: $lightLetter;
     margin:  0.4em 0.5em;
     padding: 0em 0.5em;
-    border: solid 1px white;
+    border: solid 1px $lightLetter;
+    border-radius: 2px;
 }
 
 .navigateNavbarKeyPressed{
-    background-color: rgba(0, 0, 0, 0.207);
     margin:  0.4em 0.4em;
     padding-top: 0;
     padding-bottom: 0;
     padding: 0em 0.5em;
-    border: solid 1px white;
+    color: $yellowColor;
+    border: solid 1px $yellowColor;
 
 }
 
 .navigationButtonDiv{
+    background-color: $backgroundDarkest;
     align-items: center;
     display: flex;
 }
 
 .navbarOption{
-    color: rgba(255, 255, 255, 0.467);
+    color: $disabledLightLetter;
     padding: 0em 1em;
     font-size: 1.5em;
     margin: 0em 0.6em;
-    border-top: solid 3px rgba(255, 255, 0, 0);
-    border-bottom: solid 3px rgba(255, 255, 0, 0);
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
 }
 
 .navbarOptionSelected{
-    color: rgba(255, 255, 255, 0.453);
+    color: $lightLetter;
     padding: 0em 1em;
     font-size: 1.5em;
-    border-top: solid 3px orange;
-    border-bottom: solid 3px orange;
+    border-top: solid 3px $yellowColor;
+    border-bottom: solid 3px $yellowColor;
     margin: 0em 0.6em;
 }
 
 .selectableOption{
     cursor: pointer;
+    color: $lightLetter;
 }

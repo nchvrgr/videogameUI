@@ -9,44 +9,46 @@ function QuestLog({selected}) {
             <p className="questLogLabel">
                 <span className="questLogLabelText">{quest?.name}</span>
                 {
-                    quest?.extraQuest ? <span className="questLogLabelText">Extra Quest</span> : <span className="questLogLabelText">Story Quest</span>
+                    quest?.extraQuest ? <span className="questType">Extra Quest</span> : <span className="questType">Story Quest</span>
                 }
             </p>
             <div className="questLog">
                 <p className="objectiveTracker">Objective tracker</p>
+                <div className="questLogDetails">
                 {
                     quest?.objectives.map(objective => (
                         <div key={objective.objId}>
                             <p className="questTitle">
-                                <input type="checkbox" checked={objective.completed} disabled />
-                                {objective.name}
+                                <input type="radio" value={1} checked={objective.completed} className="questCheckbox" disabled />
+                                <span className="objectiveName">{objective.name}</span>
                             </p>
                             <p className="questDescription">{objective.description}</p>
                         </div>
                     ))
                 }
+                </div>
             </div>
-            <footer className="questStats">
-                    <div>
-                        <h1>{completed ? "Completed Quest" : "Incomplete Quest" }</h1>
-                    </div>
-                    <div>
-                        <p>Rewards</p>
-                        <p className="littleTextStat">{completed ? "You received" : "You will receive"}</p>
-                        <p className="littleTextStat whiteStat">${quest?.rewards}</p>
-                    </div>
-                    <div>
-                        <p>Quest details</p>
-                        <p className="littleTextStat">
-                            Assigned by:
-                            <span className="littleSpanStat whiteStat"> {quest?.asignedBy}</span>
-                        </p>
-                        <p className="littleTextStat">
-                            Location:
-                            <span className="littleSpanStat whiteStat"> {quest?.location}</span>
-                        </p>
-                    </div>
-                </footer>
+            <footer className={completed ? "questStats completedStats" : "questStats"}>
+                <div>
+                    <h1 className={completed ? "completedH1" : null}>{completed ? "Completed Quest" : "Incomplete Quest" }</h1>
+                </div>
+                <div>
+                    <p>Rewards</p>
+                    <p className="littleTextStat">{completed ? "You received" : "You will receive"}</p>
+                    <p className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`} id="rewards">${quest?.rewards}</p>
+                </div>
+                <div>
+                    <p>Quest details</p>
+                    <p className="littleTextStat">
+                        Assigned by:
+                        <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.asignedBy}</span>
+                    </p>
+                    <p className="littleTextStat">
+                        Location:
+                        <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.location}</span>
+                    </p>
+                </div>
+            </footer>
         </div>
     )
 }
