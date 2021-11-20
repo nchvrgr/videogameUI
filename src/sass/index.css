@@ -16,6 +16,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: default;
 }
 
 .menu {
@@ -35,8 +36,13 @@ body {
 
 .navbar {
   background-color: yellow;
-  display: inline-block;
-  padding: 0em 21em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5em 0em;
 }
 
 .navbarMain {
@@ -52,6 +58,134 @@ body {
 
 .navigateNavbarKey {
   background-color: red;
-  padding: 0em 0.6em;
+  margin: 0.4em 0.4em;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding: 0em 0.5em;
+  border: solid 1px white;
+}
+
+.navbarOption {
+  padding: 0.5em 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: solid 1px black;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.navbarOptionSelected {
+  background-color: rgba(27, 167, 155, 0.5);
+  padding: 0.5em 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: solid 2px black;
+}
+
+.selectableOption {
+  color: red;
+  cursor: pointer;
+}
+
+.quests {
+  background-color: #5858d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.questList {
+  width: 15em;
+  background-color: rosybrown;
+  list-style: none;
+}
+
+.questListElement {
+  cursor: pointer;
+  margin: 0;
+}
+
+.questNav {
+  height: 20em;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.questListElementSelected {
+  cursor: pointer;
+  background-color: orangered;
+  margin: 0;
+  margin-right: 0.3em;
+}
+
+.questListElementText {
+  margin: 0.3em;
+  padding-left: 1.5em;
+  background-color: rgba(139, 69, 19, 0.267);
+}
+
+.questDescription {
+  background-color: rgba(139, 69, 19, 0.267);
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7em;
+  padding-left: 2em;
+  margin: 0;
+}
+
+.questTitle {
+  margin-bottom: 0.5em;
+}
+
+.questLabel {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: solid black 1px;
+  padding-left: 0.5em;
+}
+
+.questLogLabel {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid black 1px;
+  padding: 0em 0.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questLogDiv {
+  padding-left: 0.5em;
+}
+
+.questLog {
+  background-color: #34e8c1;
+}
+
+.objectiveTracker {
+  background-color: #39c239;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a23838;
 }
 /*# sourceMappingURL=index.css.map */

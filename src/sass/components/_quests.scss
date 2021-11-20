@@ -1,0 +1,96 @@
+.quests{
+    background-color: rgb(88, 88, 208);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.questList{
+    width: 15em;
+    background-color: rosybrown;
+    list-style: none;
+}
+
+.questListElement{
+    cursor: pointer;
+    margin: 0;
+}
+
+.questNav{
+    height: 20em;
+    overflow: hidden;
+    overflow-y:scroll;   
+}
+
+.questListElementSelected{
+    cursor: pointer;
+    background-color: orangered;
+    margin: 0;
+    margin-right: 0.3em;
+}
+
+.questListElementText{
+    margin: 0.3em;
+    padding-left: 1.5em;
+    background-color: rgba(139, 69, 19, 0.267);
+}
+
+
+.questDescription{
+    background-color: rgba(139, 69, 19, 0.267);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    padding-left: 2em;
+    margin: 0;
+}
+
+.questTitle{
+    margin-bottom: 0.5em;
+}
+
+
+.questLabel{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    border: solid black 1px;
+    padding-left: 0.5em;
+}
+
+.questLogLabel{
+    background-color: red;
+    display: flex;
+    border: solid black 1px;
+    padding: 0em 0.5em;
+    justify-content: space-between;
+}
+
+.questLogDiv{
+    padding-left: 0.5em;
+}
+
+.questLog{
+    background-color: rgb(52, 232, 193);
+}
+
+.objectiveTracker{
+    background-color: rgb(57, 194, 57);
+}
+
+
+
+// Scrollbar
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+ }
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(162, 56, 56); 
+}
+  

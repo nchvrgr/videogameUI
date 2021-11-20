@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBarMain from './NavBarMain'
+import Quests from './Quests';
+import Skills from './Skills';
 
 function Menu() {
+
+    const [selectedOption, setSelectedOption] = useState("quests");
+
     return (
         <div className="menu">
-            <NavBarMain/>
-            <h2>Menu</h2>
+            <NavBarMain option={selectedOption} setOption={setSelectedOption}/>
+            {
+                selectedOption === "quests" ?
+                <Quests/>
+                :
+                <Skills/>
+            }
         </div>
     )
 }

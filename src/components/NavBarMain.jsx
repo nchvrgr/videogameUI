@@ -1,12 +1,13 @@
 import React from 'react'
 import NavBar from './NavBar'
 
-function NavBarMain() {
+function NavBarMain({option, setOption}) {
+
     return (
         <div className="navbarMain">
             <span className="navigateNavbarKey">Q</span>
             <span>
-                <NavBar/>
+                <NavBar option={option} setOption={setOption}/>
             </span>
             <span className="navigateNavbarKey">E</span>
         </div>

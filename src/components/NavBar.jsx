@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-function NavBar() {
+function NavBar({option, setOption}) {
     return (
         <div className="navbar">
-            NAVBAR
+            <nav>
+                <span className="navbarOption">MAP</span>
+                <span 
+                className={option==="quests" ? "navbarOptionSelected selectableOption" : "navbarOption selectableOption"}
+                onClick={() => setOption("quests")}
+                >QUESTS</span>
+                <span className="navbarOption">INVENTORY</span>
+                <span className="navbarOption">BLUEPRINT</span>
+                <span 
+                className={option==="skills" ? "navbarOptionSelected selectableOption" : "navbarOption selectableOption"}
+                onClick={() => setOption("skills")}
+                >SKILLS</span>
+            </nav>
         </div>
     )
 }
