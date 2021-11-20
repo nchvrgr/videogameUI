@@ -1,12 +1,12 @@
 
 .navbarMain{
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.604);
     display: flex;
     width: 100%;
 }
 
 .navbar{
-    background-color: rgba(255, 255, 34, 0.7);
+    background-color: rgba(255, 255, 255, 0.131);
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -14,14 +14,14 @@
 }
 
 .navigateNavbarKey{
-    background-color: red;
+    color: white;
     margin:  0.4em 0.5em;
     padding: 0em 0.5em;
     border: solid 1px white;
 }
 
 .navigateNavbarKeyPressed{
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.207);
     margin:  0.4em 0.4em;
     padding-top: 0;
     padding-bottom: 0;
@@ -31,28 +31,28 @@
 }
 
 .navigationButtonDiv{
-    background-color: orange;
     align-items: center;
     display: flex;
 }
 
 .navbarOption{
+    color: rgba(255, 255, 255, 0.467);
     padding: 0em 1em;
     font-size: 1.5em;
-    border: solid 1px black;
-    background-color: rgba(0, 0, 0, 0.233);
     margin: 0em 0.6em;
+    border-top: solid 3px rgba(255, 255, 0, 0);
+    border-bottom: solid 3px rgba(255, 255, 0, 0);
 }
 
 .navbarOptionSelected{
-    background-color: rgba(27, 167, 155, 0.5);
+    color: rgba(255, 255, 255, 0.453);
     padding: 0em 1em;
     font-size: 1.5em;
-    border: solid 2px black;
+    border-top: solid 3px orange;
+    border-bottom: solid 3px orange;
     margin: 0em 0.6em;
 }
 
 .selectableOption{
-    color: red;
     cursor: pointer;
 }

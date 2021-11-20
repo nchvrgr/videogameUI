@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import skills from '../customableStuff/skills';
+import SkillCard from './SkillCard';
 
 function Skills() {
     return (
-        <div>
-            <h1>Skills</h1>
+        <div className="skillsMain">
+            {
+                skills?.map( skill => {
+                    return(
+                        <SkillCard key={skill.id} skill={skill}/>
+                    )
+                })
+            }
         </div>
     )
 }

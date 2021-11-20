@@ -1,0 +1,71 @@
+.skillsMain{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    padding-bottom: 1.2em;
+}
+
+.skillCard{
+    background-color: green;
+    width: 20em;
+    height: 20em;
+    margin: 0em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skillTitleDivision{
+    display: block !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    h1{
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-left: 0.6em;
+    }
+    h3{
+        margin-top: 0 !important;
+        margin-left: 1.1em;
+        margin-bottom: 0.2em !important;
+    }
+}
+
+.skillImage{
+    background-color: blue;
+    width: 5em;
+    height: 5em;
+    padding: 1em;
+    margin: 0;
+}
+
+.skillDivision{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(138, 43, 43);
+    width: 100%;
+    padding: 0;
+    margin-top: 0.2em;
+}
+
+.skillPointsDivision{
+    width: 100%;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+}
+
+.skillImageDiv{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0.4em;
+    padding-top: 0.7em;
+    margin-top: 0.2em;
+}
+
+.skillText{
+    margin: 0;
+    padding: 0em 0.5em;
+}

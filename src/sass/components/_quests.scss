@@ -1,5 +1,4 @@
 .quests{
-    background-color: rgb(88, 88, 208);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,8 +7,9 @@
 
 .questList{
     width: 15em;
-    background-color: rosybrown;
+    background-color: rgba(0, 0, 0, 0.535);
     list-style: none;
+    color: rgba(255, 255, 255, 0.432);
 }
 
 
@@ -27,7 +27,7 @@
 
 .questListElementSelected{
     cursor: pointer;
-    background-color: orangered;
+    background-color: orange;
     margin: 0;
     margin-right: 0.3em;
 }
@@ -35,12 +35,10 @@
 .questListElementText{
     margin: 0.3em;
     padding-left: 1.5em;
-    background-color: rgba(139, 69, 19, 0.267);
 }
 
 
 .questDescription{
-    background-color: rgba(139, 69, 19, 0.267);
     font-family: 'Roboto', sans-serif;
     font-size: 0.7em;
     padding-left: 2em;
@@ -53,15 +51,16 @@
 
 
 .questLabel{
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.549);
+    color: orange;
     display: flex;
     justify-content: space-between;
-    border: solid black 1px;
     padding-left: 0.5em;
 }
 
 .questLogLabel{
-    background-color: red;
+    background-color: rgba(12, 10, 10, 0.514);
+    color: white;
     display: flex;
     border: solid black 1px;
     padding: 0em 0.5em;
@@ -73,7 +72,6 @@
 }
 
 .questLog{
-    background-color: rgb(52, 232, 193);
     height: 14.94em;
     margin: 0;
 }
@@ -81,7 +79,7 @@
 .logDiv{
     height: 100%;
     display: inline-block;
-    background-color: saddlebrown;
+    background-color: rgba(0, 0, 0, 0.568);
 }
 
 .littleTextStat{
@@ -93,13 +91,15 @@
 }
 
 .questStats{
-    background-color: rgba(0, 0, 0, 0.474);
+    background-color: rgba(0, 0, 0, 0.186);
+    color: rgba(255, 255, 255, 0.241);
     display: flex;
     justify-content: space-around;
 }
 
 .objectiveTracker{
-    background-color: rgb(57, 194, 57);
+    color: orange;
+    padding-left: 0.5em;
 }
 
 
@@ -111,10 +111,10 @@
 }
   
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #0000007c; 
  }
    
 ::-webkit-scrollbar-thumb {
-    background: rgb(162, 56, 56); 
+    background: orange; 
 }
   
