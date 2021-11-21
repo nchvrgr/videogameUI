@@ -1,27 +1,27 @@
 import React from 'react';
-import { useEffect } from 'react/cjs/react.development';
+// import { useEffect } from 'react/cjs/react.development';
 
 function QuestList({quests, selected, setSelected}) {
 
-    const handleKeyDown = (e) => {
-        if (e.key === 'ArrowDown'|| e.key === 's') {
-            if (selected < quests.length) {
-                setSelected(selected + 1);
-            }
-        } else if (e.key === 'ArrowUp' || e.key === 'w') {
-            if (selected > 1) {
-                setSelected(selected - 1);
-            }
-        }
-    }
+    // const handleKeyDown = (e) => {
+    //     if (e.key === 'ArrowDown'|| e.key === 's') {
+    //         if (selected < quests.length) {
+    //             setSelected(selected + 1);
+    //         }
+    //     } else if (e.key === 'ArrowUp' || e.key === 'w') {
+    //         if (selected > 1) {
+    //             setSelected(selected - 1);
+    //         }
+    //     }
+    // }
 
-    useEffect(() => {
-        window.addEventListener('keydown', handleKeyDown);
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [selected]);
+    // useEffect(() => {
+    //     window.addEventListener('keydown', handleKeyDown);
+    //     return () => {
+    //         window.removeEventListener('keydown', handleKeyDown);
+    //     }
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, [selected]);
 
     return (
         <div className="questList">
