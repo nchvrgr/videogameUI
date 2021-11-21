@@ -8,6 +8,9 @@ body{
     background: url(../media/bluredGameplayScreenshot.png);
     background-size: cover;
     font-family: 'Bebas Neue', cursive;    
+
+    background-size: 150% 150%;
+	animation: gradient 20s ease infinite;
 }
 
 
@@ -15,5 +18,21 @@ body{
 
 
 
+
+
+
+// Background
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 
