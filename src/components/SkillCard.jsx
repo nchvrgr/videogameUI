@@ -15,7 +15,7 @@ function SkillCard({skill, selected, setSelected}) {
             <div className={"skillDivision skillImageContainer"}>
                 <div className={selected === skill.id ? "skillImageDiv2" : "skillImageDiv2Unselected"}>
                     <div className={selected === skill.id ? "skillImageDiv" : "skillImageDivUnselected"}>
-                        <img src={skill.image.default} alt={skill.name} className="skillImage"/>
+                        <img src={skill.image.default} alt={skill.name} className={selected === skill.id ? "skillImage selected" : "skillImage"}/>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ function SkillCard({skill, selected, setSelected}) {
             </div>
 
 
-            <div className="skillDivision skillPointsDivision" style={skill.skillPoints > 0 ? {color: 'white'} : null}>
+            <div className="skillDivision skillPointsDivision">
                 <p className="skillText">Skill points</p>
                 <p className="skillText">{skill.skillPoints}</p>
             </div>

@@ -100,6 +100,9 @@ p{
     h3{
         color: $yellowColor;
     }
+    p{
+        color: white;
+    }
     .skillDivision{
         background-color: $backgroundLittleDarker;
     }
@@ -193,3 +196,6 @@ p{
     margin: 0;
 }
 
+.selected{
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(15deg);
+}

@@ -20,6 +20,7 @@ function QuestList({quests, selected, setSelected}) {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selected]);
 
     return (

@@ -9,6 +9,7 @@ function NavBarMain({option, setOption, buttonQ, setButtonQ, buttonE, setButtonE
             setButtonQ(false)
             setButtonE(false)
         }, 250);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [buttonQ, buttonE]);
 
     return (

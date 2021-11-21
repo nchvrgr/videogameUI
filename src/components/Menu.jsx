@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import NavBarMain from './NavBarMain'
 import Quests from './Quests';
 import Skills from './Skills';
