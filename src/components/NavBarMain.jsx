@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react/cjs/react.development'
+// import { useEffect } from 'react/cjs/react.development'
 import NavBar from './NavBar'
 
 function NavBarMain({option, setOption, buttonQ, setButtonQ, buttonE, setButtonE}) {
