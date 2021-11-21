@@ -30,7 +30,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0em 1em;
   margin-top: 0.5em;
 }
 
@@ -96,7 +95,7 @@ body {
 }
 
 .navigateNavbarKeyPressed {
-  margin: 0.4em 0.4em;
+  margin: 0.4em 0.5em;
   padding-top: 0;
   padding-bottom: 0;
   padding: 0em 0.5em;
@@ -119,22 +118,26 @@ body {
   padding: 0em 1em;
   font-size: 1.5em;
   margin: 0em 0.6em;
-  border-top: solid 3px transparent;
-  border-bottom: solid 3px transparent;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
 }
 
 .navbarOptionSelected {
-  color: rgba(255, 255, 255, 0.508);
+  color: #e19300 !important;
   padding: 0em 1em;
   font-size: 1.5em;
-  border-top: solid 3px #e19300;
-  border-bottom: solid 3px #e19300;
+  border-top: solid 2px #e19300;
+  border-bottom: solid 2px #e19300;
   margin: 0em 0.6em;
 }
 
 .selectableOption {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.508);
+}
+
+.selectableOption:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .quests {
@@ -159,6 +162,10 @@ body {
 .questListElement {
   cursor: pointer;
   margin: 0;
+}
+
+.questListElement:hover {
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .questNav {
@@ -335,7 +342,6 @@ input[type='radio']:checked:after {
 }
 
 .skillsMain {
-  background-color: orange;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,32 +350,44 @@ input[type='radio']:checked:after {
           justify-content: space-between;
   padding-top: 0.5em;
   padding-bottom: 1.2em;
+  font-weight: normal !important;
+  margin-bottom: 2.5em;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+p {
+  font-weight: normal;
 }
 
 .skillCard {
-  background-color: green;
-  width: 20em;
   height: 20em;
-  margin: 0em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+  width: 15.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skillCard:hover {
+  cursor: pointer;
+}
+
+.skillCard:hover .skillDivision {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .skillTitleDivision {
   display: block !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  font-weight: normal !important;
 }
 
 .skillTitleDivision h1 {
@@ -384,22 +402,15 @@ input[type='radio']:checked:after {
   margin-bottom: 0.2em !important;
 }
 
-.skillImage {
-  background-color: blue;
-  width: 5em;
-  height: 5em;
-  padding: 1em;
-  margin: 0;
-}
-
 .skillDivision {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: rgba(255, 255, 255, 0.508);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #8a2b2b;
+  background-color: rgba(0, 0, 0, 0.55);
   width: 100%;
   padding: 0;
   margin-top: 0.2em;
@@ -411,17 +422,72 @@ input[type='radio']:checked:after {
   padding-bottom: 0.35em;
 }
 
-.skillImageDiv {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 0.4em;
-  padding-top: 0.7em;
-  margin-top: 0.2em;
-}
-
 .skillText {
   margin: 0;
   padding: 0em 0.5em;
+}
+
+.selectedSkillCard h1 {
+  color: #e19300;
+}
+
+.selectedSkillCard h3 {
+  color: #e19300;
+}
+
+.skillImageDiv {
+  text-align: center;
+  width: 7em;
+  height: 7em;
+  padding: 0.7em;
+  background: linear-gradient(to right, #e19300 1px, transparent 1px) 0 0, linear-gradient(to right, #e19300 1px, transparent 1px) 0 100%, linear-gradient(to left, #e19300 1px, transparent 1px) 100% 0, linear-gradient(to left, #e19300 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, #e19300 1px, transparent 1px) 0 0, linear-gradient(to bottom, #e19300 1px, transparent 1px) 100% 0, linear-gradient(to top, #e19300 1px, transparent 1px) 0 100%, linear-gradient(to top, #e19300 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+
+.skillImageDivUnselected {
+  text-align: center;
+  width: 7em;
+  height: 7em;
+  padding: 0.7em;
+  background: linear-gradient(to right, transparent 1px, transparent 1px) 0 0, linear-gradient(to right, transparent 1px, transparent 1px) 0 100%, linear-gradient(to left, transparent 1px, transparent 1px) 100% 0, linear-gradient(to left, transparent 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, transparent 1px, transparent 1px) 0 0, linear-gradient(to bottom, transparent 1px, transparent 1px) 100% 0, linear-gradient(to top, transparent 1px, transparent 1px) 0 100%, linear-gradient(to top, transparent 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+
+.skillImageDiv2 {
+  text-align: center;
+  padding: 1.12px;
+  background: linear-gradient(to right, #e19300 3px, transparent 3px) 0 0, linear-gradient(to right, #e19300 3px, transparent 3px) 0 100%, linear-gradient(to left, #e19300 3px, transparent 3px) 100% 0, linear-gradient(to left, #e19300 3px, transparent 3px) 100% 100%, linear-gradient(to bottom, #e19300 3px, transparent 3px) 0 0, linear-gradient(to bottom, #e19300 3px, transparent 3px) 100% 0, linear-gradient(to top, #e19300 3px, transparent 3px) 0 100%, linear-gradient(to top, #e19300 3px, transparent 3px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+}
+
+.skillImageDiv2Unselected {
+  text-align: center;
+  padding: 1.12px;
+  background: linear-gradient(to right, transparent 3px, transparent 3px) 0 0, linear-gradient(to right, transparent 3px, transparent 3px) 0 100%, linear-gradient(to left, transparent 3px, transparent 3px) 100% 0, linear-gradient(to left, transparent 3px, transparent 3px) 100% 100%, linear-gradient(to bottom, transparent 3px, transparent 3px) 0 0, linear-gradient(to bottom, transparent 3px, transparent 3px) 100% 0, linear-gradient(to top, transparent 3px, transparent 3px) 0 100%, linear-gradient(to top, transparent 3px, transparent 3px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+}
+
+.skillImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0em;
+}
+
+.skillImage {
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */

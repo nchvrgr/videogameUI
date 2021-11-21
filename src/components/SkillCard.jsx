@@ -1,15 +1,25 @@
 import React from 'react'
 
-function SkillCard({skill}) {
+function SkillCard({skill, selected, setSelected}) {
     return (
-        <div className="skillCard">
+        <div className={selected === skill.id ? "skillCard selectedSkillCard" : "skillCard"}
+        onClick={() => setSelected(skill.id)}
+        >
             <div className="skillDivision skillTitleDivision">
                 <h1>{skill.name}</h1>
                 <h3>Level</h3>
             </div>
-            <div className="skillDivision skillImageDiv">
-                <img src={skill.image.default} alt={skill.name} className="skillImage"/>
+
+
+            <div className={"skillDivision skillImageContainer"}>
+                <div className={selected === skill.id ? "skillImageDiv2" : "skillImageDiv2Unselected"}>
+                    <div className={selected === skill.id ? "skillImageDiv" : "skillImageDivUnselected"}>
+                        <img src={skill.image.default} alt={skill.name} className="skillImage"/>
+                    </div>
+                </div>
             </div>
+
+
             <div className="skillDivision">
                 <p className="skillText">Level</p> 
                 <p className="skillText">{skill.level}</p>
@@ -25,7 +35,7 @@ function SkillCard({skill}) {
             <div className="skillDivision">
                 <p className="skillText">BAR</p>
             </div>
-            <div className="skillDivision skillPointsDivision">
+            <div className="skillDivision skillPointsDivision" style={skill.skillPoints > 0 ? {color: 'white'} : null}>
                 <p className="skillText">Skill points</p>
                 <p className="skillText">{skill.skillPoints}</p>
             </div>

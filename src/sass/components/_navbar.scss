@@ -22,7 +22,7 @@
 }
 
 .navigateNavbarKeyPressed{
-    margin:  0.4em 0.4em;
+    margin:  0.4em 0.5em;
     padding-top: 0;
     padding-bottom: 0;
     padding: 0em 0.5em;
@@ -42,20 +42,23 @@
     padding: 0em 1em;
     font-size: 1.5em;
     margin: 0em 0.6em;
-    border-top: solid 3px transparent;
-    border-bottom: solid 3px transparent;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
 }
 
 .navbarOptionSelected{
-    color: $lightLetter;
+    color: $yellowColor !important;
     padding: 0em 1em;
     font-size: 1.5em;
-    border-top: solid 3px $yellowColor;
-    border-bottom: solid 3px $yellowColor;
+    border-top: solid 2px $yellowColor;
+    border-bottom: solid 2px $yellowColor;
     margin: 0em 0.6em;
 }
 
 .selectableOption{
     cursor: pointer;
     color: $lightLetter;
+    &:hover{
+        color: $lighterLetter;
+    }
 }

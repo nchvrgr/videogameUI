@@ -1,26 +1,40 @@
 .skillsMain{
-    background-color: orange;
     display: flex;
     justify-content: space-between;
     padding-top: 0.5em;
     padding-bottom: 1.2em;
+    font-weight: normal !important;
+    margin-bottom: 2.5em;
+}
+
+h1{
+    font-weight: normal;
+}
+h3{
+    font-weight: normal;
+}
+p{
+    font-weight: normal;
 }
 
 .skillCard{
-    background-color: green;
-    width: 20em;
     height: 20em;
-    margin: 0em 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
+    width: 15.5em;
     align-items: center;
+    &:hover{
+        cursor: pointer;
+        .skillDivision{
+            background-color: $backgroundLittleDarker;
+        }
+    }
 }
 
 .skillTitleDivision{
     display: block !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+    font-weight: normal !important;
     h1{
         margin-bottom: 0 !important;
         margin-top: 0 !important;
@@ -33,18 +47,11 @@
     }
 }
 
-.skillImage{
-    background-color: blue;
-    width: 5em;
-    height: 5em;
-    padding: 1em;
-    margin: 0;
-}
-
 .skillDivision{
     display: flex;
+    color: $lightLetter;
     justify-content: space-between;
-    background-color: rgb(138, 43, 43);
+    background-color: $backgroundDark;
     width: 100%;
     padding: 0;
     margin-top: 0.2em;
@@ -56,16 +63,105 @@
     padding-bottom: 0.35em;
 }
 
-.skillImageDiv{
-    display: block;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 0.4em;
-    padding-top: 0.7em;
-    margin-top: 0.2em;
-}
-
 .skillText{
     margin: 0;
     padding: 0em 0.5em;
 }
+
+.selectedSkillCard{
+    h1{
+        color: $yellowColor;
+    }
+    h3{
+        color: $yellowColor;
+    }
+}
+
+/// IMAGE DIV --------------------------------------------------------------
+
+.skillImageDiv{
+    text-align: center;
+    width: 7em;
+    height: 7em;
+    padding: 0.7em;
+    background:
+    linear-gradient(to right, $yellowColor 1px, transparent 1px) 0 0,
+    linear-gradient(to right, $yellowColor 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, $yellowColor 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, $yellowColor 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, $yellowColor 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, $yellowColor 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, $yellowColor 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, $yellowColor 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+.skillImageDivUnselected{
+    text-align: center;
+    width: 7em;
+    height: 7em;
+    padding: 0.7em;
+    background:
+    linear-gradient(to right, transparent 1px, transparent 1px) 0 0,
+    linear-gradient(to right, transparent 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, transparent 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, transparent 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, transparent 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, transparent 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, transparent 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, transparent 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+.skillImageDiv2{
+    text-align: center;
+    padding: 1.12px;
+    background:
+    linear-gradient(to right, $yellowColor 3px, transparent 3px) 0 0,
+    linear-gradient(to right, $yellowColor 3px, transparent 3px) 0 100%,
+    linear-gradient(to left, $yellowColor 3px, transparent 3px) 100% 0,
+    linear-gradient(to left, $yellowColor 3px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, $yellowColor 3px, transparent 3px) 0 0,
+    linear-gradient(to bottom, $yellowColor 3px, transparent 3px) 100% 0,
+    linear-gradient(to top, $yellowColor 3px, transparent 3px) 0 100%,
+    linear-gradient(to top, $yellowColor 3px, transparent 3px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+
+
+.skillImageDiv2Unselected{
+    text-align: center;
+    padding: 1.12px;
+    background:
+    linear-gradient(to right, transparent 3px, transparent 3px) 0 0,
+    linear-gradient(to right, transparent 3px, transparent 3px) 0 100%,
+    linear-gradient(to left, transparent 3px, transparent 3px) 100% 0,
+    linear-gradient(to left, transparent 3px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, transparent 3px, transparent 3px) 0 0,
+    linear-gradient(to bottom, transparent 3px, transparent 3px) 100% 0,
+    linear-gradient(to top, transparent 3px, transparent 3px) 0 100%,
+    linear-gradient(to top, transparent 3px, transparent 3px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+
+
+
+.skillImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0em;
+
+}
+
+.skillImage{
+    width: 5em;
+    height: 5em;
+    padding: 1em;
+    margin: 0;
+}
+
