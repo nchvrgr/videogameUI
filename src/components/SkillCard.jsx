@@ -35,7 +35,7 @@ function SkillCard({skill, selected, setSelected}) {
             </div>
 
 
-            <div className="skillDivision">
+            <div className={ selected === skill.id ? "skillDivision selectedSkillDivision" : "skillDivision"}>
                 <div className="progressBarDiv">
                     <div className="progressBar">
                         <div className="progressBarFill" style={{width: `${levelProgress}%`}}></div>

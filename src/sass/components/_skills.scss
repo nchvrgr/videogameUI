@@ -17,6 +17,12 @@ p{
     font-weight: normal;
 }
 
+.selectedSkillDivision{
+    .progressBarFill{
+        background-color: $yellowColor;
+    }
+}
+
 .skillCard{
     height: 20em;
     display: block;
@@ -25,7 +31,7 @@ p{
     &:hover{
         cursor: pointer;
         .skillDivision{
-            background-color: $backgroundLittleDarker;
+            background-color: $backgroundDarkHover;
         }
     }
 }
@@ -93,6 +99,9 @@ p{
     }
     h3{
         color: $yellowColor;
+    }
+    .skillDivision{
+        background-color: $backgroundLittleDarker;
     }
 }
 

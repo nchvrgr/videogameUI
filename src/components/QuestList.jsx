@@ -27,11 +27,12 @@ function QuestList({quests, selected, setSelected}) {
             <nav className="questNav">
                     {quests?.map( quest => (
                         <div key={quest.id} className={ selected === quest.id ? "questListElementSelected" : "questListElement"}>
+                            {selected === quest.id ? <p className="circle">〇</p>: null}
                             <p value={quest.id} 
                             onClick={() => setSelected(quest.id)}
                             className={"questListElementText"}
                             > 
-                                {quest.name} 
+                               {quest.name} 
                             </p>
                         </div>
                         )

@@ -180,6 +180,25 @@ body {
   color: black;
   margin: 0;
   margin-right: 0.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.questListElementSelected .questListElementText {
+  padding-left: 0.5em;
+  margin: 0;
+  padding-top: 1px;
+}
+
+.questListElementSelected p {
+  margin: 0;
+  padding-left: 0.3em;
+}
+
+.questListElementSelected .circle {
+  top: 2px;
+  font-weight: bolder;
 }
 
 .questListElementText {
@@ -229,6 +248,7 @@ input[type='radio']:after {
   width: 12px;
   height: 12px;
   border-radius: 15px;
+  margin-top: 2px;
   top: -2px;
   left: -1px;
   position: relative;
@@ -366,6 +386,10 @@ p {
   font-weight: normal;
 }
 
+.selectedSkillDivision .progressBarFill {
+  background-color: #e19300;
+}
+
 .skillCard {
   height: 20em;
   display: block;
@@ -380,7 +404,7 @@ p {
 }
 
 .skillCard:hover .skillDivision {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.58);
 }
 
 .skillTitleDivision {
@@ -452,6 +476,10 @@ p {
 
 .selectedSkillCard h3 {
   color: #e19300;
+}
+
+.selectedSkillCard .skillDivision {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .skillImageDiv {
