@@ -7,10 +7,8 @@ function NavBarMain({option, setOption, buttonQ, setButtonQ, buttonE, setButtonE
     useEffect(() => {
         setTimeout(() => {
             setButtonQ(false)
-        }, 500);
-        setTimeout(() => {
             setButtonE(false)
-        }, 500);
+        }, 250);
     }, [buttonQ, buttonE]);
 
     return (

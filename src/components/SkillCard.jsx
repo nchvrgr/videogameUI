@@ -1,6 +1,7 @@
 import React from 'react'
 
 function SkillCard({skill, selected, setSelected}) {
+    const levelProgress = 100 / skill.nextLevel * skill.habilityPoints; 
     return (
         <div className={selected === skill.id ? "skillCard selectedSkillCard" : "skillCard"}
         onClick={() => setSelected(skill.id)}
@@ -32,9 +33,17 @@ function SkillCard({skill, selected, setSelected}) {
                 <p className="skillText">Next level</p>
                 <p className="skillText">{skill.nextLevel}</p>
             </div>
+
+
             <div className="skillDivision">
-                <p className="skillText">BAR</p>
+                <div className="progressBarDiv">
+                    <div className="progressBar">
+                        <div className="progressBarFill" style={{width: `${levelProgress}%`}}></div>
+                    </div>
+                </div>
             </div>
+
+
             <div className="skillDivision skillPointsDivision" style={skill.skillPoints > 0 ? {color: 'white'} : null}>
                 <p className="skillText">Skill points</p>
                 <p className="skillText">{skill.skillPoints}</p>
