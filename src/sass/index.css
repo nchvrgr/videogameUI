@@ -231,7 +231,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .objectiveName {
@@ -284,7 +284,7 @@ input[type='radio']:checked:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .questType {
@@ -352,7 +352,7 @@ input[type='radio']:checked:after {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0000007c;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -393,7 +393,7 @@ p {
 .skillCard {
   height: 20em;
   display: block;
-  width: 15.5em;
+  width: 32%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
