@@ -7,9 +7,6 @@ body {
   background: url(../media/bluredGameplayScreenshot.png);
   background-size: cover;
   font-family: 'Bebas Neue', cursive;
-  background-size: 150% 150%;
-  -webkit-animation: gradient 20s ease infinite;
-          animation: gradient 20s ease infinite;
 }
 
 .main {
@@ -245,6 +242,12 @@ body {
 
 .completedStats {
   color: #e19300 !important;
+  -webkit-box-shadow: #e1920034 0px 0px 1em 0px;
+          box-shadow: #e1920034 0px 0px 1em 0px;
+}
+
+.completedStats h1 {
+  text-shadow: #e192005d 0 0 0.3em;
 }
 
 input[type='radio']:after {
@@ -329,8 +332,62 @@ input[type='radio']:checked:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questStats span {
+  padding-left: 0.2em;
+}
+
+.questStatsLeft {
+  margin-left: 0;
+  padding-left: 2em;
+  width: 100%;
+}
+
+.questStatsLeft h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.2em;
+}
+
+.questStatsLeft p {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.questStatsRight {
+  width: 100%;
+  margin-right: 0;
+}
+
+.questStatsRight h2 {
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-right: 1.5em;
+}
+
+.questStatsRight p {
+  margin: 0;
+  width: 50%;
+  padding-top: 0.5em;
+  text-align: left;
+  font-weight: normal;
+}
+
+.statsDiv {
+  padding: 0em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .objectiveTracker {
@@ -372,7 +429,7 @@ input[type='radio']:checked:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 0.5em;
-  padding-bottom: 3.5em;
+  padding-bottom: 4.8em;
   font-weight: normal !important;
 }
 
@@ -601,7 +658,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em 0em;
+  padding: 1.4em 0em;
+  margin: 0.4em 0em;
 }
 
 .skillImage {

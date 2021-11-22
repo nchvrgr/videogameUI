@@ -86,6 +86,10 @@
 
 .completedStats{
     color: $yellowColor !important;
+    box-shadow: $yellowColorShineLight 0px 0px 1em 0px;
+    h1{
+        text-shadow: $yellowColorShine 0 0 0.3em;
+    }
 }
 
 input[type='radio']:after {
@@ -165,7 +169,52 @@ input[type='radio']:checked:after {
     background-color: $backgroundDarkest;
     color: $darkerLetter;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    span{
+        padding-left: 0.2em;
+    }
+}
+
+.questStatsLeft{
+    margin-left: 0;
+    padding-left: 2em;
+    width: 100%;
+    h1{
+        font-size: 2.5em;
+        margin: 0;
+        padding: 0;
+        padding-top: 0.2em;
+    }
+    p{
+        margin: 0;
+        padding-bottom: 1em;
+    }
+}
+
+.questStatsRight{
+
+    width: 100%;
+    margin-right: 0;
+    h2{
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+    }
+    p{
+        margin: 0;
+        width: 50%;
+        padding-top: 0.5em;
+        text-align: left;
+        font-weight: normal;
+    }
+}
+
+.statsDiv{
+    padding: 0em 2em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .objectiveTracker{
