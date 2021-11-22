@@ -374,7 +374,6 @@ input[type='radio']:checked:after {
   padding-top: 0.5em;
   padding-bottom: 1.2em;
   font-weight: normal !important;
-  margin-bottom: 2.7em;
 }
 
 h1 {
@@ -394,7 +393,7 @@ p {
 }
 
 .skillCard {
-  height: 20em;
+  height: 19.5em;
   display: block;
   width: 32%;
   -webkit-box-align: center;
@@ -411,7 +410,9 @@ p {
 }
 
 .skillTitleDivision {
-  display: block !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   font-weight: normal !important;
@@ -431,7 +432,7 @@ p {
 
 .progressBar {
   width: 100%;
-  margin: 0.4em 0em;
+  margin-bottom: 0.4em;
   border: solid 1px white;
 }
 
@@ -446,6 +447,8 @@ p {
   background-color: rgba(255, 255, 255, 0.4);
   border: solid 2px rgba(0, 0, 0, 0.55);
   border-right: none;
+  -webkit-box-shadow: 0px 0px 10px 0px #e192005d;
+          box-shadow: 0px 0px 10px 0px #e192005d;
 }
 
 .skillDivision {
@@ -462,6 +465,18 @@ p {
   margin-top: 0.2em;
 }
 
+.skillDivision2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
 .skillPointsDivision {
   width: 100%;
   padding-top: 0.35em;
@@ -475,6 +490,7 @@ p {
 
 .selectedSkillCard h1 {
   color: #e19300;
+  text-shadow: 0px 0px 10px #e192005d;
 }
 
 .selectedSkillCard h3 {
@@ -486,7 +502,46 @@ p {
 }
 
 .selectedSkillCard .skillDivision {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 0px #e192005d;
+          box-shadow: 0px 0px 10px 0px #e192005d;
+}
+
+.selectedSkillCard .skillDivision .levelDiv h3 {
+  border-color: #e19300;
+  -webkit-box-shadow: 0px 0px 10px 0px #e192005d;
+          box-shadow: 0px 0px 10px 0px #e192005d;
+}
+
+.selectedSkillCard .skillDivision .skillPointsP {
+  color: #e19300;
+  text-shadow: 0px 0px 10px #e192005d;
+}
+
+.selectedSkillCard:hover .skillDivision {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.levelNumberH3 {
+  border: solid 1px rgba(255, 255, 255, 0.4);
+  border-radius: 0.3em;
+  padding: 0.6em 0.9em;
+  margin-top: 1em;
+}
+
+.levelDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1em;
+}
+
+.nextLevelDiv {
+  padding-top: 0.2em;
+  display: block;
 }
 
 .skillImageDiv {
@@ -543,11 +598,13 @@ p {
   height: 5em;
   padding: 1em;
   margin: 0;
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
 }
 
 .selected {
-  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(15deg);
-          filter: invert(0.5) sepia(1) saturate(5) hue-rotate(15deg);
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(10deg);
+          filter: invert(0.5) sepia(1) saturate(5) hue-rotate(10deg);
 }
 
 @-webkit-keyframes gradient {

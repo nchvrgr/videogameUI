@@ -1,11 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Creator: CorelDRAW X8 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="241px" height="121px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 15 8"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
+
+<svg
+   xml:space="preserve"
+   width="241px"
+   height="121px"
+   version="1.1"
+   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+   viewBox="0 0 15 8"
+   id="svg33"
+   sodipodi:docname="Button_Ecs.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview35"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="2.0950413"
+   inkscape:cx="149.87771"
+   inkscape:cy="46.538462"
+   inkscape:window-width="1366"
+   inkscape:window-height="715"
+   inkscape:window-x="228"
+   inkscape:window-y="1072"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_x0020_1" />
+ <defs
+   id="defs25">
+  <style
+   type="text/css"
+   id="style23">
    <![CDATA[
     .str0 {stroke:white;stroke-width:0.317469}
     .fil0 {fill:none}
@@ -13,9 +44,31 @@ viewBox="0 0 15 8"
    ]]>
   </style>
  </defs>
- <g id="Capa_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path class="fil0 str0" d="M1 0l14 0c0,0 0,0 0,1l0 6c0,0 0,1 0,1l-14 0c-1,0 -1,-1 -1,-1l0 -6c0,-1 0,-1 1,-1z"/>
-  <path class="fil1" d="M5 2l2 0 0 0 -2 0 0 1 1 0 0 1 -1 0 0 1 2 0 0 1 -2 0 0 -4zm3 4c-1,0 -1,0 -1,0 0,-1 0,-1 0,-1l0 -2c0,0 0,0 0,0 0,0 0,0 1,0 0,0 0,0 0,0 0,0 0,0 0,0l0 1 0 0 0 -1c0,0 0,0 0,0 0,0 -1,0 -1,0l0 2c0,0 1,0 1,0 0,0 0,0 0,0l0 0 0 0 0 0c0,0 0,0 0,1 0,0 0,0 0,0zm2 0c-1,0 -1,0 -1,0 0,-1 0,-1 0,-1l0 0 0 0 0 0c0,0 1,0 1,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,-1 0,-1 -1,0 -1,0 -1,0 0,0 0,0 0,-1 0,0 0,0 0,0 0,0 0,0 1,0 0,0 0,0 0,0 0,0 0,0 0,0l0 0 0 0 0 0c0,0 0,0 0,0 0,0 0,0 0,0 0,0 -1,0 -1,0 0,0 1,1 1,1 0,0 0,0 0,0 0,0 0,0 0,0 0,1 0,1 0,1 0,0 0,0 0,1 0,0 0,0 0,0z"/>
- </g>
+ <g
+   inkscape:groupmode="layer"
+   id="layer1"
+   inkscape:label="Capa 2" /><g
+   id="Capa_x0020_1"
+   inkscape:label="Capa 1"
+   inkscape:groupmode="layer"
+   style="display:inline;opacity:1">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <path
+   class="fil0 str0"
+   d="m 1,0 h 14 c 0,0 0,0 0,1 v 6 c 0,0 0,1 0,1 H 1 C 0,8 0,7 0,7 V 1 C 0,0 0,0 1,0 Z"
+   id="path28" />
+  
+ <text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:7.3661px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.184154"
+   x="2.8922021"
+   y="6.5535975"
+   id="text1137"
+   transform="scale(1.040205,0.96134894)"><tspan
+     sodipodi:role="line"
+     id="tspan1135"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.3661px;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.184154"
+     x="2.8922021"
+     y="6.5535975">Esc</tspan></text></g>
 </svg>

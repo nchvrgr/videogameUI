@@ -4,7 +4,6 @@
     padding-top: 0.5em;
     padding-bottom: 1.2em;
     font-weight: normal !important;
-    margin-bottom: 2.7em;
 }
 
 h1{
@@ -24,7 +23,7 @@ p{
 }
 
 .skillCard{
-    height: 20em;
+    height: 19.5em;
     display: block;
     width: 32%;
     align-items: center;
@@ -37,7 +36,7 @@ p{
 }
 
 .skillTitleDivision{
-    display: block !important;
+    display: flex;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     font-weight: normal !important;
@@ -55,7 +54,7 @@ p{
 
 .progressBar{
     width: 100%;
-    margin: 0.4em 0em;
+    margin-bottom: 0.4em;
     border: solid 1px white;
 }
 
@@ -70,6 +69,7 @@ p{
     background-color: $lightLetter;
     border: solid 2px $backgroundDark;
     border-right: none;
+    box-shadow: 0px 0px 10px 0px $yellowColorShine;
 }
 
 .skillDivision{
@@ -80,6 +80,14 @@ p{
     width: 100%;
     padding: 0;
     margin-top: 0.2em;
+}
+
+.skillDivision2{
+    display: flex;
+    color: $lightLetter;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
 }
 
 .skillPointsDivision{
@@ -96,6 +104,7 @@ p{
 .selectedSkillCard{
     h1{
         color: $yellowColor;
+        text-shadow: 0px 0px 10px $yellowColorShine;
     }
     h3{
         color: $yellowColor;
@@ -105,7 +114,41 @@ p{
     }
     .skillDivision{
         background-color: $backgroundLittleDarker;
+        box-shadow: 0px 0px 10px 0px $yellowColorShine;
+        .levelDiv{
+            h3{
+                border-color: $yellowColor;
+                box-shadow: 0px 0px 10px 0px $yellowColorShine;
+            }
+        }
+        .skillPointsP{
+            color: $yellowColor;
+            text-shadow: 0px 0px 10px $yellowColorShine;
+        }
     }
+    &:hover{
+        .skillDivision{
+            background-color: $backgroundLittleDarker;
+        }
+    }
+}
+
+.levelNumberH3{
+    border: solid 1px $lightLetter;
+    border-radius: 0.3em;
+    padding: 0.6em 0.9em;
+    margin-top: 1em;
+}
+
+.levelDiv{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.nextLevelDiv{
+    padding-top: 0.2em;
+    display: block;
 }
 
 /// IMAGE DIV --------------------------------------------------------------
@@ -194,8 +237,9 @@ p{
     height: 5em;
     padding: 1em;
     margin: 0;
+    filter: invert(50%);
 }
 
 .selected{
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(15deg);
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(10deg);
 }

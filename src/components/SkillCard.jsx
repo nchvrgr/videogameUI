@@ -7,8 +7,13 @@ function SkillCard({skill, selected, setSelected}) {
         onClick={() => setSelected(skill.id)}
         >
             <div className="skillDivision skillTitleDivision">
-                <h1>{skill.name}</h1>
-                <h3>Level</h3>
+                <div>
+                    <h1>{skill.name}</h1>
+                    <h3>Level</h3>
+                </div>
+                <div className="levelDiv">
+                    <h3 className="levelNumberH3">{skill.level}</h3>
+                </div>
             </div>
 
 
@@ -20,25 +25,16 @@ function SkillCard({skill, selected, setSelected}) {
                 </div>
             </div>
 
-
-            <div className="skillDivision">
-                <p className="skillText">Level</p> 
-                <p className="skillText">{skill.level}</p>
-            </div>
-            <div className="skillDivision">
-                <p className="skillText">Level points</p>
-                <p className="skillText">{skill.habilityPoints}</p>
-            </div>
-            <div className="skillDivision">
-                <p className="skillText">Next level</p>
-                <p className="skillText">{skill.nextLevel}</p>
-            </div>
-
-
-            <div className={ selected === skill.id ? "skillDivision selectedSkillDivision" : "skillDivision"}>
-                <div className="progressBarDiv">
-                    <div className="progressBar">
-                        <div className="progressBarFill" style={{width: `${levelProgress}%`}}></div>
+            <div className="skillDivision nextLevelDiv">
+                <div style={{display: "flex", justifyContent: 'space-between', marginBottom: 0}}>
+                    <p className="skillText">Next level</p>
+                    <p className="skillText">{skill.habilityPoints}/{skill.nextLevel}</p>
+                </div>
+                <div className={ selected === skill.id ? "skillDivision2 selectedSkillDivision" : "skillDivision2"}>
+                    <div className="progressBarDiv">
+                        <div className="progressBar">
+                            <div className="progressBarFill" style={{width: `${levelProgress}%`}}></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,7 +42,7 @@ function SkillCard({skill, selected, setSelected}) {
 
             <div className="skillDivision skillPointsDivision">
                 <p className="skillText">Skill points</p>
-                <p className="skillText">{skill.skillPoints}</p>
+                <p className={ skill.skillPoints > 0 ? "skillText skillPointsP" : "skillText"}>{skill.skillPoints}</p>
             </div>
 
         </div>
