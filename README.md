@@ -15,6 +15,14 @@ To run this app locally:
 - npm install
 - npm start
 
+---
+
 <p align="center">
     <img src="./mediaFiles/screenshot.png">
+</p>
+
+---
+
+<p align="center">
+    <img src="./mediaFiles/screenshot2.png">
 </p>
