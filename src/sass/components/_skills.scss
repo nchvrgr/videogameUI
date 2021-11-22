@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 0.5em;
-    padding-bottom: 1.2em;
+    padding-bottom: 3.5em;
     font-weight: normal !important;
 }
 
@@ -20,6 +20,7 @@ p{
 .selectedSkillDivision{
     .progressBarFill{
         background-color: $yellowColor;
+        box-shadow: 0px 0px 10px 0px $yellowColorShine;
     }
 }
 
@@ -32,7 +33,13 @@ p{
         cursor: pointer;
         .skillDivision{
             background-color: $backgroundDarkHover;
+
         }
+    }
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 0;
+        padding-left: 0;
     }
 }
 
@@ -47,9 +54,11 @@ p{
         margin-left: 0.6em;
     }
     h3{
+        font-size: 1.3em;
         margin-top: 0 !important;
-        margin-left: 1.1em;
-        margin-bottom: 0.2em !important;
+        margin-left: 1.2em;
+        margin-bottom: 0.4em !important;
+        line-height: 0.1em;
     }
 }
 
@@ -67,15 +76,14 @@ p{
 
 .progressBarFill{
     height: 0.7em;
-    background-color: $lightLetter;
+    background-color: $lightSkillLetter;
     border: solid 2px $backgroundDark;
     border-right: none;
-    box-shadow: 0px 0px 10px 0px $yellowColorShine;
 }
 
 .skillDivision{
     display: flex;
-    color: $lightLetter;
+    color: $lightSkillLetter;
     justify-content: space-between;
     background-color: $backgroundDark;
     width: 100%;
@@ -93,8 +101,8 @@ p{
 
 .skillPointsDivision{
     width: 100%;
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
+    padding: 0.5em 0em;
+    font-size: 1.2em;
 }
 
 .skillText{
@@ -112,6 +120,7 @@ p{
     }
     p{
         color: white;
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.651);
     }
     .skillDivision{
         background-color: $backgroundLittleDarker;
@@ -137,18 +146,20 @@ p{
 .levelNumberH3{
     border: solid 1px $lightLetter;
     border-radius: 0.3em;
-    padding: 0.6em 0.9em;
-    margin-top: 1em;
+    padding: 1.2em 1em;
+    text-align: center;
 }
 
 .levelDiv{
     display: flex;
     align-items: center;
-    margin-right: 1em;
+    margin-right: 1.2em;
+    padding-top: 0.5em;
 }
 
 .nextLevelDiv{
-    padding-top: 0.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
     display: block;
 }
 
@@ -156,8 +167,8 @@ p{
 
 .skillImageDiv{
     text-align: center;
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     padding: 0.7em;
     background:
     linear-gradient(to right, $yellowColor 1px, transparent 1px) 0 0,
@@ -174,8 +185,8 @@ p{
 
 .skillImageDivUnselected{
     text-align: center;
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     padding: 0.7em;
     background:
     linear-gradient(to right, transparent 1px, transparent 1px) 0 0,
@@ -234,11 +245,11 @@ p{
 }
 
 .skillImage{
-    width: 5em;
-    height: 5em;
-    padding: 1em;
+    width: 6em;
+    height: 6em;
     margin: 0;
-    filter: invert(50%);
+    padding-top: 0.5em;
+    filter: invert(30%);
 }
 
 .selected{
