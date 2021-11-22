@@ -6,7 +6,7 @@ This app is deployed [here](https://videogame-ui.vercel.app/) (without key navig
 
 Video de presentación: [youtube](https://www.youtube.com/watch?v=-KJwEYkeoYY)
 
-(There were a few changes on the UI and UX after the video)
+(There were a few changes on the UI after the video)
 
 To run this app locally:
 
