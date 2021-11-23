@@ -40,25 +40,27 @@ function QuestLog({selected}) {
                     <div>
                         <h2>Quest details</h2>
                     </div>
-                    <div className="statsDiv">
-                        <p className="littleTextStat">
-                            Assigned by:
-                            <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.asignedBy}</span>
-                        </p>
-                        <p className="littleTextStat">
-                            Location:
-                            <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.location}</span>
-                        </p>
-                    </div>
-                    <div className="statsDiv">
-                        <p className="littleTextStat">
-                            Time:
-                            <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> 15 min</span>
-                        </p>
-                        <p className="littleTextStat">
-                            Difficulty:
-                            <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> Hard </span>
-                        </p>
+                    <div className="statsDivSup">
+                        <div className="statsDiv">
+                            <p className="littleTextStat">
+                                Assigned by:
+                                <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.asignedBy}</span>
+                            </p>
+                            <p className="littleTextStat">
+                                Location:
+                                <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.location}</span>
+                            </p>
+                        </div>
+                        <div className="statsDiv statsDiv2">
+                            <p className="littleTextStat">
+                                Time:
+                                <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.time} min</span>
+                            </p>
+                            <p className="littleTextStat">
+                                Difficulty:
+                                <span className={`littleSpanStat ${completed ? "darkStat" : "whiteStat"}`}> {quest?.difficulty} </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </footer>
