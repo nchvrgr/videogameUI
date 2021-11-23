@@ -319,7 +319,7 @@ input[type='radio']:checked:after {
 }
 
 .littleTextStat {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .whiteStat {
@@ -360,34 +360,38 @@ input[type='radio']:checked:after {
 }
 
 .questStatsRight {
-  width: 100%;
+  width: 90%;
   margin-right: 0;
 }
 
 .questStatsRight h2 {
   font-weight: normal;
   margin: 0;
-  text-align: center;
   padding-top: 0.5em;
-  padding-right: 1.5em;
 }
 
 .questStatsRight p {
   margin: 0;
-  width: 50%;
+  width: 100%;
   padding-top: 0.5em;
   text-align: left;
   font-weight: normal;
 }
 
 .statsDiv {
-  padding: 0em 2em;
+  width: 100%;
+}
+
+.statsDiv2 {
+  padding-left: 0;
+}
+
+.statsDivSup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .objectiveTracker {
